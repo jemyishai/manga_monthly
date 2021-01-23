@@ -3,10 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manga Monthly Podcast</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
   </head>
 
-  <body>
+  <body >
     <header id="header">
       <img
         id="header-img"
@@ -14,20 +14,39 @@
       />
 
       <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#podcast-links">Podcast</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
+        <ul id="nav-bar-list">
+          <li><a class="nav-link" href="#podcast-links">Podcast | </a></li>
+          <li><a class="nav-link" href="#about">About | </a></li>
           <li><a class="nav-link" href="#newsletter-signup">Newsletter</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="podcast-links">Links to the Podcast</section>
+      <section id="about">About
 
-    <section id="podcast-links">Links to the Podcast</section>
-    <section id="about">About</section>
-    <section id="newsletter-signup">Newsletter Sign-Up
-      <form id="form"></form>
+        <h3>Check out this sweet new Manga</h3>
+        <!-- <video controls >
+          <source src="https://youtu.be/ckmLaBHMTWY" type="video/webm" >
 
-    </section>
+            Sorry, your browser doesn't support embedded videos.
+        </video> -->
+        <iframe id="video" width="250" height="250" src="https://www.youtube.com/embed/ckmLaBHMTWY" frameborder="0"  allowfullscreen></iframe>
+      </section>
+      <section id="newsletter-signup">
+        Newsletter Sign-Up
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ilovemanga@youremail.com"
+            required
+          />
+          <input id="submit" type="submit">Submit</input>
+        </form>
+      </section>
+    </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
