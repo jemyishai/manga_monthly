@@ -3,20 +3,24 @@ body {
   font-size: 14px;
   background-color: tan;
   color: black;
+  width: 100%;
 }
 
 header {
   position: fixed;
-  width: 100%;
+  /* width: 100%; */
   top: 0;
-  left: 0;
+  right: 20%;
+  margin: 1em;
+ display:flex;
+ flex-flow:row wrap;
+
 }
 
 #nav-bar-list{
  display:flex;
  flex-flow:row wrap;
- /* flex-direction: column;
- flex-wrap: wrap; */
+ right: 1em;
 }
 
 img{
@@ -24,6 +28,19 @@ img{
   height:50px;
 }
 
+main {
+  clear: both;
+  margin-top: 10em;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding: 1em;
+}
 
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
